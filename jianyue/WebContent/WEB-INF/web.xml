@@ -1,82 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <servlet>
-  	<servlet-name>AdminLoginServlet</servlet-name>
-  	<servlet-class>adminview.AdminLoginServlet</servlet-class>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>adminview.AdminLoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AdminLoginServlet</servlet-name>
-  	<url-pattern>/adminlogin.html</url-pattern>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/adminlogin.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>PageServlet</servlet-name>
-  	<servlet-class>adminview.PageServlet</servlet-class>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>adminview.PageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>PageServlet</servlet-name>
-  	<url-pattern>/articlelist.html</url-pattern>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/articlelist.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>UpdateAdminServlet</servlet-name>
-  	<servlet-class>adminview.UpdateAdminServlet</servlet-class>
+    <servlet-name>AdviceListServlet</servlet-name>
+    <servlet-class>adminview.AdviceListServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>UpdateAdminServlet</servlet-name>
-  	<url-pattern>/updateself.html</url-pattern>
+    <servlet-name>AdviceListServlet</servlet-name>
+    <url-pattern>/advicelist.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>AddArticleServlet</servlet-name>
-  	<servlet-class>adminview.AddArticleServlet</servlet-class>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <servlet-class>adminview.UpdateAdminServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AddArticleServlet</servlet-name>
-  	<url-pattern>/addArticle.html</url-pattern>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <url-pattern>/updateself.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>DeleteArticleServlet</servlet-name>
-  	<servlet-class>adminview.DeleteArticleServlet</servlet-class>
+    <servlet-name>AddArticleServlet</servlet-name>
+    <servlet-class>adminview.AddArticleServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>DeleteArticleServlet</servlet-name>
-  	<url-pattern>/deleteArticle.html</url-pattern>
+    <servlet-name>AddArticleServlet</servlet-name>
+    <url-pattern>/addArticle.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>UpdateArticleServlet</servlet-name>
-  	<servlet-class>adminview.UpdateArticleServlet</servlet-class>
+    <servlet-name>DeleteArticleServlet</servlet-name>
+    <servlet-class>adminview.DeleteArticleServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>UpdateArticleServlet</servlet-name>
-  	<url-pattern>/updateArticle.html</url-pattern>
+    <servlet-name>DeleteArticleServlet</servlet-name>
+    <url-pattern>/deleteArticle.html</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>GetArticleServlet</servlet-name>
-  	<servlet-class>action.GetArticleServlet</servlet-class>
+    <servlet-name>DeleteAdviceServlet</servlet-name>
+    <servlet-class>adminview.DeleteAdviceServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>GetArticleServlet</servlet-name>
-  	<url-pattern>/getArticle.html</url-pattern>
+    <servlet-name>DeleteAdviceServlet</servlet-name>
+    <url-pattern>/deleteAdvice.html</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <servlet-name>UpdateArticleServlet</servlet-name>
+    <servlet-class>adminview.UpdateArticleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateArticleServlet</servlet-name>
+    <url-pattern>/updateArticle.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetArticleServlet</servlet-name>
+    <servlet-class>action.GetArticleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetArticleServlet</servlet-name>
+    <url-pattern>/getArticle.html</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetAdviceServlet</servlet-name>
+    <servlet-class>action.GetAdviceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAdviceServlet</servlet-name>
+    <url-pattern>/getAdvice.html</url-pattern>
+  </servlet-mapping>
   <filter>
-  	<filter-name>CharEncoding</filter-name>
-  	<filter-class>filter.CharFilter</filter-class>
-  	<init-param>
-  		<param-name>encoding</param-name>
-  		<param-value>UTF-8</param-value>
-  	</init-param>
+    <filter-name>CharEncoding</filter-name>
+    <filter-class>filter.CharFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
   </filter>
-  
   <filter-mapping>
-  		<filter-name>CharEncoding</filter-name>
-  		<url-pattern>/*</url-pattern>
+    <filter-name>CharEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
   </filter-mapping>
-  
-  
   <context-param>
-   <param-name>contextConfigLocation</param-name>
-   <param-value>classpath:applicationContext.xml</param-value>
-</context-param>
-
-  
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
 </web-app>

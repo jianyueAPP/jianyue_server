@@ -12,10 +12,12 @@ public class DBUtil {
 	private static PreparedStatement ps=null;
 	private static ResultSet rs=null;
 	//�������ݿ�Ĳ���
-	private static final String URL="jdbc:mysql://localhost/jianyue?useUnicode=true&amp;characterEncoding=UTF-8";
-    private static final String NAME="root";
-    private static final String PASSWORD="BigUp888";
-
+	/*private static final String URL="jdbc:mysql://localhost/jianyue?useUnicode=true&amp;characterEncoding=UTF-8";
+	    private static final String NAME="root";
+	    private static final String PASSWORD="BigUp888";*/
+	    private static final String URL="jdbc:mysql://localhost:3306/jianyue";
+	    private static final String NAME="jianyue";
+	    private static final String PASSWORD="123456789";
 	//�������ݿ�
 	public static Connection getConnection() {
 		try {

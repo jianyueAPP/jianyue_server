@@ -15,4 +15,9 @@ create table t_admin (
 	adminname char(20),
 	password char(10)
 );
+create table t_advice (
+	id int(10) primary key auto_increment,
+	time char(20),
+	content char(200)
+);
 Grant all on jianyue  to 'jianyue'@'localhost' identified by '123456789';

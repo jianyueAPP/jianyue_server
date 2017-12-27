@@ -7,11 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
- <form action = "getArticle.html" method="post" >
+ <form action = "getAdvice.html" method="post" >
 
                
 
-                        <input type="text" class="loginform_input" name="json" value="{&quot;tag&quot;:[&quot;aaa&quot;,&quot;bbb&quot; ]}"/>
+                        <input type="text" class="loginform_input" name="json" value="aaaaaaa"/>
 
                     
 

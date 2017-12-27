@@ -20,7 +20,7 @@ public abstract class BasicService implements BasicServiceInter {
 	private SessionFactory sessionFactory;
 	
 	public void setSessionFactory(SessionFactory sessionFactory) {
-	    	System.out.println("aaa"+sessionFactory);
+	    	//System.out.println("aaa"+sessionFactory);
 		this.sessionFactory = sessionFactory;
 	}
 
@@ -33,8 +33,8 @@ public abstract class BasicService implements BasicServiceInter {
 	//ͳһ��ѯ����(hql)
 	public List executeQuery(String hql, Object[] parameters) {
 		// TODO Auto-generated method stub
-		System.out.println(hql);
-		System.out.println(this.sessionFactory);
+		//System.out.println(hql);
+		//System.out.println(this.sessionFactory);
 		Session session = this.sessionFactory.getCurrentSession();
 		System.out.println("bbb");
 		Query query=session.createQuery(hql);

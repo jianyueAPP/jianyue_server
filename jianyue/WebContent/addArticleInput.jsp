@@ -8,8 +8,10 @@
 </head>
 <body>
 <div style="text-align:right;border-bottom:1px solid #000;">
-	欢迎使用！
-	<a href="<%=request.getContextPath()%>/addArticleInput.jsp">添加文章</a>
+	欢迎使用！&nbsp;&nbsp;
+	<a href="<%=request.getContextPath()%>/articlelist.html">文章列表</a>
+	&nbsp;<a href="<%=request.getContextPath()%>/advicelist.html">反馈列表</a>
+	&nbsp;<a href="<%=request.getContextPath()%>/addArticleInput.jsp">添加文章</a>
 	&nbsp;<a href="<%=request.getContextPath()%>/updateSelfInput.jsp"> 修改个人信息</a>
 	&nbsp;<a href="<%=request.getContextPath() %>/logout.jsp">退出系统</a>
 </div>

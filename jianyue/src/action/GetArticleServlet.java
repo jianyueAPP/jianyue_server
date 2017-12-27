@@ -63,7 +63,7 @@ public class GetArticleServlet extends HttpServlet {
 	String classPathFormat=classPath.substring(1,classPath.length());
 	//String result=PythonUtil.execPy("python3",classPathFormat+"choosearticle.py",args.toString());
 	String result=PythonUtil.execPy("python3",classPathFormat+"choosearticle.py",json);
-	result=decodeUnicode(result);
+	result = decodeUnicode(result);
 	System.out.println(result);
 	resp.setHeader("Content-type", "text/html;charset=UTF-8");
 	resp.setCharacterEncoding("utf-8");
